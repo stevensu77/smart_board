@@ -121,6 +121,29 @@ Preview the production build locally:
 npm run preview
 ```
 
+## Deploy To GitHub Pages
+
+This project includes a GitHub Actions workflow for GitHub Pages:
+
+```text
+.github/workflows/deploy.yml
+```
+
+The Vite base path is configured for the project URL:
+
+```text
+https://stevensu77.github.io/smart_board/
+```
+
+To enable deployment in GitHub:
+
+1. Open the repository on GitHub.
+2. Go to `Settings` -> `Pages`.
+3. Set `Build and deployment` source to `GitHub Actions`.
+4. Push changes to the `main` branch.
+
+GitHub will build the app and publish the `dist` output automatically.
+
 ## How To Use
 
 1. Open the app in your browser.
